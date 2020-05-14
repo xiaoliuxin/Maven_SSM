@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--设置日志使用log4f 防止加了spring-context 后不起作用-->
+ 	<settings>
+		<setting name="logImpl" value="log4j" />
+	</settings>
+    <typeAliases><!-- 取别名 -->
+        <typeAlias alias="User" type="com.lx.model.User"/>
+<!--		<typeAlias alias="Follow" type="com.gph.model.Follow"/>-->
+<!--		<typeAlias alias="Information" type="com.gph.model.Information"/>-->
+<!--		<typeAlias alias="Message" type="com.gph.model.Message"/>-->
+<!--		<typeAlias alias="Progress" type="com.gph.model.Progress"/>-->
+<!--		<typeAlias alias="UserCollectVideo" type="com.gph.model.UserCollectVideo"/>-->
+<!--		<typeAlias alias="UserPraiseIcon" type="com.gph.model.UserPraiseIcon"/>-->
+<!--		<typeAlias alias="Video" type="com.gph.model.Video"/>-->
+<!--		<typeAlias alias="VideoType" type="com.gph.model.VideoType"/>-->
+		<!--<typeAlias alias="User" type="Model.User"/>-->
+        <!--<typeAlias alias="Animalkind" type="entity.Animalkind"/>-->
+        <!--<typeAlias alias="Animal" type="entity.Animal"/>-->
+
+
+        <!--<typeAlias alias="Order" type="com.po.Order"/>-->
+     </typeAliases>
+	 <mappers>
+		     <mapper resource="mapper/UserMapper.xml"/>
+<!--         <mapper resource="mapper/FollowMapper.xml"/>-->
+<!--		 <mapper resource="mapper/MessageMapper.xml"/>-->
+<!--		 <mapper resource="mapper/UserCollectVideoMapper.xml"/>-->
+<!--		 <mapper resource="mapper/UserPraiseIconMapper.xml"/>-->
+<!--		 <mapper resource="mapper/VideoMapper.xml"/>-->
+<!--		 <mapper resource="mapper/VideoTypeMapper.xml"/>-->
+
+ 	</mappers>
+</configuration>
+
